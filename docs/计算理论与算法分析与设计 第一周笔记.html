@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>计算理论与算法分析与设计 第一周笔记 | wuzirui&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+    <meta name="description" content="This is a blog">
+    
+    <link rel="preload" href="/assets/css/0.styles.a094304c.css" as="style"><link rel="preload" href="/assets/js/app.f90e4604.js" as="script"><link rel="preload" href="/assets/js/2.7ac7b4f1.js" as="script"><link rel="preload" href="/assets/js/8.b2684562.js" as="script"><link rel="prefetch" href="/assets/js/3.44e1a6d6.js"><link rel="prefetch" href="/assets/js/4.7009a737.js"><link rel="prefetch" href="/assets/js/5.6c3f77f2.js"><link rel="prefetch" href="/assets/js/6.df51e3d8.js"><link rel="prefetch" href="/assets/js/7.064f8a48.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a094304c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">wuzirui's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="计算理论与算法分析与设计-第一周笔记"><a href="#计算理论与算法分析与设计-第一周笔记" class="header-anchor">#</a> 计算理论与算法分析与设计 第一周笔记</h1> <p></p><div class="table-of-contents"><ul><li><a href="#算法的概念">算法的概念</a><ul><li><a href="#算法的四条性质">算法的四条性质</a></li></ul></li><li><a href="#算法复杂性理论">算法复杂性理论</a><ul><li><a href="#几次抽象过程">几次抽象过程</a></li></ul></li></ul></div><p></p> <h2 id="算法的概念"><a href="#算法的概念" class="header-anchor">#</a> 算法的概念</h2> <blockquote><p><strong>定义</strong>[课本]：算法是指解决问题的一种方法或一个过程，更严格的讲，算法是由若干条指令组成的有穷序列</p></blockquote> <h3 id="算法的四条性质"><a href="#算法的四条性质" class="header-anchor">#</a> 算法的四条性质</h3> <ul><li><strong>输入</strong>：有<strong>零个或多个</strong>由外部提供的量作为算法的输入</li> <li><strong>输出</strong>：算法产生<strong>至少一个</strong>输出</li> <li><strong>确定性</strong>：组成算法的每条指令是清晰无歧义的</li> <li><strong>有限性</strong>：算法中每条指令的执行次数是有限的，执行每条指令所需要的时间也是有限的</li></ul> <h2 id="算法复杂性理论"><a href="#算法复杂性理论" class="header-anchor">#</a> 算法复杂性理论</h2> <h3 id="几次抽象过程"><a href="#几次抽象过程" class="header-anchor">#</a> 几次抽象过程</h3> <h4 id="实际计算机中运行时所耗费的资源"><a href="#实际计算机中运行时所耗费的资源" class="header-anchor">#</a> 实际计算机中运行时所耗费的资源</h4> <blockquote><p>算法的<strong>复杂性</strong>是算法运行所需要的计算机资源的量，需要时间资源的量称为时间复杂性，需要空间资源的量称为空间复杂性</p></blockquote> <h4 id="抽象计算机模型"><a href="#抽象计算机模型" class="header-anchor">#</a> 抽象计算机模型</h4> <p>为了衡量算法复杂性，并集中反应算法的效率，应该将算法从实际计算机中抽象出来，只依赖于要解<strong>问题的规模 N</strong>、算法的<strong>输入 I</strong>和<strong>算法 <strong>本身</strong>A</strong>的函数。
+$$
+C = F(N, I, A)
+$$</p> <ul><li>通常来讲，A隐含在上下文中，通常被省略，得到时间复杂性和空间复杂性函数</li></ul> <p>$$
+T = T(N, I)\quad S = S(N, I)
+$$</p> <ul><li><p>时间复杂性可以进一步分解为抽象计算机上的元运算执行时间的和
+$$
+T(N, I) = \sum_{i = 1}^{k}t_ie_i(N, I)
+$$
+其中k为抽象计算机提供元运算个个数，ti，ei分别为执行元运算需要的时间以及在一次运行中执行的次数</p></li> <li><p>一般来讲，我们需要根据具体问题来对N，T的取值作出定义，只选取重要的指标参与计算。例如，在排序算法中只选取比较次数作为T的指标，等。</p></li></ul> <h4 id="规模n的函数"><a href="#规模n的函数" class="header-anchor">#</a> 规模N的函数</h4> <p>显然，我们不能对每一种合法输入I都统计其ei的值，因此通常选取某类代表性的合法输入来作为代表进行计算。一般情况下，我们选取<strong>最坏情况</strong>下的输入
+$$
+T_{max} = \max_{I\in D_N}\sum_{i=1}^{k}t_ie_i(N, I) = T(N,I^*)
+$$</p> <h4 id="渐进函数"><a href="#渐进函数" class="header-anchor">#</a> 渐进函数</h4> <p>当不同算法的效率差异较大时，我们可以进一步对复杂性函数进行抽象，只考虑其<strong>阶</strong>的大小。常用的记号有
+$$
+O, \Theta, \Omega, o, \omega
+$$</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f90e4604.js" defer></script><script src="/assets/js/2.7ac7b4f1.js" defer></script><script src="/assets/js/8.b2684562.js" defer></script>
+  </body>
+</html>
