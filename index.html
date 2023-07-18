@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -22,7 +22,14 @@
                 <p class="name" style="text-align: center;">
                   Zirui Wu
                 </p>
-                <p>Zirui Wu received his B.Sc. degree in Computer Science and Technology from Beijing Institute of Technology, China. He is currently pursuing his Ph.D. degree in robotics and autonomous systems (ROAS) at the Hong Kong University of Science and Technology (Guangzhou campus), supervised by Prof. <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>. From 2022, he has been a research intern at the DISCOVER Lab, Institute for AI Industry Research, Tsinghua University. His researchs focus on neural implicit represenations, 3D computer vision, robotics and autonomous driving.
+                <p>
+                  Zirui Wu received his B.Sc. degree in Computer Science and Technology from Beijing Institute of Technology, China. 
+                </p>
+                <p>
+                  From 2022, he has been a research intern at the DISCOVER Lab, Institute for AI Industry Research, Tsinghua University. His researchs focus on neural implicit represenations, 3D computer vision, robotics and autonomous driving.
+                </p>
+                <p>
+                  He is currently pursuing his Ph.D. degree in robotics and autonomous systems (ROAS) at the Hong Kong University of Science and Technology (Guangzhou campus), supervised by Prof. <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/SONG-Jie/jsongroas">Jie Song</a>. 
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:wuzirui@tztyun.org">Email</a> &nbsp;/&nbsp;
@@ -32,7 +39,7 @@
                   <a href="https://github.com/wuzirui/">Github</a>
                 </p>
               </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
+              <td style="padding:2.5%;width:20%;max-width:20%">
                 <a href="images/ziruiwu.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/ziruiwu.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
@@ -42,7 +49,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in neural implicit represenations, 3D computer vision, and robotics. Representative papers are <span class="highlight">highlighted</span>.
+                  I'm interested in neural implicit represenations, 3D computer vision, robotics, and autonomous driving. Representative papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
@@ -50,95 +57,80 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
     
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
+      <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/zipnerf.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/zipnerf.jpg' width="160">
+            <video  width=100% height=100% muted autoplay loop>
+              <source src="images/mars.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
-            }
-
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
-            }
-            zipnerf_stop()
-          </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="http://jonbarron.info/zipnerf">
-            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
+          <a href="https://open-air-sun.github.io/mars">
+            <span class="papertitle">MARS: An Instance-aware, Modular and Realistic Simulator for Autonomous Driving</span>
           </a>
           <br>
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>
+          <strong>Zirui Wu</strong>, Tianyu Liu, Liyi Luo, Zhide Zhong, Jianteng Chen, Hongmin Xiao, Chao Hou, Haozhe Lou, Yuantao Chen,
+            <a href="https://runyiyang.github.io">Runyi Yang</a>, Yuxin Huang, Xiaoyu Ye, Zike Yan, Yongliang Shi, Yiyi Liao, and
+            <a href="https://sites.google.com/view/fromandto">Hao Zhao</a>
           <br>
-          <em>ICCV</em>, 2023
+          <em>CICAI</em>, 2023 (Oral)
           <br>
-          <a href="http://jonbarron.info/zipnerf">project page</a>
+          <a href="https://open-air-sun.github.io/mars">project page</a>
           /
-          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-          /
-          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+          <a href="">arXiv (coming soon)</a>
           <p></p>
           <p>
-          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
+            We propose an autonomous driving simulator based upon neural radiance fields (NeRFs). Compared with existing works, ours has three notable features: <strong> (1) Instance-aware. (2) Modular. (3) Realistic</strong>. Our simulator achieves state-of-the-art photorealism results given the best module selection. Our simulator will be <strong>open-sourced</strong> while most of our counterparts are not.
           </p>
         </td>
       </tr>
       
-      <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
-            <div class="two" id='bakedsdf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/bakedsdf_after.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/bakedsdf_before.jpg' width="160">
+            <div class="two" id='latitude_image'>
+              <img src='images/latitude.png' width="180">
           </div>
-          <script type="text/javascript">
-            function bakedsdf_start() {
-              document.getElementById('bakedsdf_image').style.opacity = "1";
-            }
-
-            function bakedsdf_stop() {
-              document.getElementById('bakedsdf_image').style.opacity = "0";
-            }
-            bakedsdf_stop()
-          </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://bakedsdf.github.io/">
-            <span class="papertitle">BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis</span>
+          <a href="">
+            <span class="papertitle">LATITUDE: Robotic Global Localization with Truncated Dynamic Low-pass Filter in City-scale NeRF</span>
           </a>
           <br>
-          <a href="https://lioryariv.github.io/">Lior Yariv*</a>,
-          <a href="https://phogzone.com/">Peter Hedman*</a>,
-          <a href="https://creiser.github.io/">Christian Reiser</a>,
-          <a href="https://dorverbin.github.io/">Dor Verbin</a>,  <br>
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-          <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>
+          Zhenxin Zhu, Yuantao Chen, <strong>Zirui Wu</strong>, Chao Hou, Yongliang Shi, Chuxuan Li, Pengfei Li, <a href="https://sites.google.com/view/fromandto">Hao Zhao</a>, and Guyue Zhou.
           <br>
-          <em>SIGGRAPH</em>, 2023
+          <em>ICRA</em>, 2023
           <br>
-          <a href="https://bakedsdf.github.io/">project page</a>
-          /
-          <a href="https://www.youtube.com/watch?v=fThKXZ6uDTk">video</a>
-          /
-          <a href="https://arxiv.org/abs/2302.14859">arXiv</a>
+          <a href="http://arxiv.org/abs/2209.08498">arXiv</a>
           <p></p>
           <p>
-          We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
+            We propose a two-stage pipeline for global localization in a city-scale neural map.
+          </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='omninerf_image'>
+              <img src='images/omni.png' width="180">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="">
+            <span class="papertitle">OmniNeRF: Hybriding Omnidirectional Distance and Radiance fields for Neural Surface Reconstruction</span>
+          </a>
+          <br>
+          <strong>Zirui Wu</strong>, Jiaming Shen, Bolin Song, Yi Xu
+          <br>
+          <em>CMSDA</em>, 2022
+          <br>
+          <a href="http://arxiv.org/abs/2209.13433">arXiv</a>
+          <p></p>
+          <p>
+            We solve two systematic errors in classical distance-radiance field by utilizing omnidirectional distance field.
           </p>
         </td>
       </tr>
@@ -146,7 +138,7 @@
           </tbody></table>
 
           
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
               <td>
                 <h2>Miscellanea</h2>
@@ -199,12 +191,12 @@
             </tr>
             
             
-          </tbody></table>
+          </tbody></table> -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
-                <p style="text-align:right;font-size:small;">
+                <p style="text-align:center;font-size:small;">
                   Web page borrowed from <a href="http://jonbarron.info/">Jonathan T. Barron</a>.
               </td>
             </tr>
