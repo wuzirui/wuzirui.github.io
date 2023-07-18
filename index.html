@@ -197,7 +197,15 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:center;font-size:small;">
-                  Web page borrowed from <a href="http://jonbarron.info/">Jonathan T. Barron</a>.
+                  Web page borrowed from <a href="http://jonbarron.info/">Jonathan T. Barron</a>. Last update: <span id='lastupdate'></span>.
+                  <script>
+                  function get_update() {
+                    var x = document.lastModified;
+                    document.getElementById("lastupdate").innerHTML = new Date(document.lastModified).toISOString().substr(0, 10);
+                  }
+
+                  get_update()
+                </script>
               </td>
             </tr>
           </tbody></table>
