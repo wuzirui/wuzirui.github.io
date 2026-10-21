@@ -17,3 +17,6 @@
 .soma-copy .eyebrow{font-size:9px;letter-spacing:1.2px;margin-bottom:13px}.soma-copy h3{font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-.5px}.soma-copy h3 span{font-size:.77em;letter-spacing:1px;margin-left:4px}.soma-authors{font-size:11px;color:var(--muted);margin-top:12px}.soma-description{font-size:13px;line-height:1.8;color:var(--muted);margin:14px 0 16px;max-width:430px}.soma-copy .links{font-size:11px;gap:20px}
 @media(max-width:1000px){.soma-project{gap:32px}.soma-copy h3{font-size:28px}}
 @media(max-width:700px){.soma-project{grid-template-columns:1fr;gap:23px;padding:5px 0 29px;margin-bottom:25px}.soma-copy h3{font-size:28px}.soma-description{max-width:none}}
+
+/* Coffee setup photo, kept with the existing coffee story and team photograph. */
+.coffee-machine{display:block;position:relative;margin-top:19px;background:#eeede8;max-width:430px}.coffee-machine img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}.coffee-machine span{display:block;font-size:10px;color:var(--muted);padding:7px 0;background:var(--paper)}.coffee-machine:hover span{color:var(--accent)}
